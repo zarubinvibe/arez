@@ -50,7 +50,7 @@ You need a Mac or a Linux machine and Node.js 22 or newer. That is the whole lis
    node bin/arez.ts gate
    ```
 
-   You see `gate: ✓ зелёный - фазы A-D, каталог и doctor сошлись`. This is the same gate a coordinator runs out of an attacking agent's reach: it runs the tests, the catalog, the doctor, and the end-to-end Deimos A–D scenario, and returns a single exit code.
+   You see `gate: ✓ зелёный - фазы A-D, каталог и doctor сошлись`. This is the same gate a coordinator runs out of an attacking agent's reach: it runs the tests, the catalog, the doctor, and the end-to-end acceptance scenario, and returns a single exit code.
 
 6. **Check the vendored core.**
 
@@ -66,11 +66,11 @@ You need a Mac or a Linux machine and Node.js 22 or newer. That is the whole lis
    node bin/arez.ts catalog
    ```
 
-   You see the Ares seat: provider `claude`, `daimons:[]`, and six scanners with `deimos` as the orchestrator. Deimos runs the others as a chain and folds their exit codes into one verdict.
+   You see the Ares seat: provider `claude`, `daimons:[]`, and six scanners with `deimoz` as the orchestrator. Deimoz runs the others as a chain and folds their exit codes into one verdict.
 
 8. **Understand what a finding is.** Open `tests/CORPUS.md` and `AGENTS.md`. The one rule to carry away: a finding counts only when a separate process watched the exploit test go red on the broken code and green after the fix. A test that was green before the fix is thrown out. Arez proves; it does not guess.
 
-9. **What next.** The full phase order is in `docs/MASTER-PLAN.md`. The safety model is in `SECURITY.md`. To keep your copy current later, run `/arez-update` in Claude Code, or `git pull` and the gate again.
+9. **What next.** The full stage order is in `docs/MASTER-PLAN.md`. The safety model is in `SECURITY.md`. To keep your copy current later, run `/arez-update` in Claude Code, or `git pull` and the gate again.
 
 ---
 

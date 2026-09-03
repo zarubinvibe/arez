@@ -2,10 +2,10 @@
   "note": "6 сканеров на сиденье Ареса (REQ-19/REQ-26). Деймос их ОРКЕСТРИРУЕТ в цепочку и в exit-код - не дублирует. Объявление и контракт каждого - в catalog/scanners/<name>.md; полный runnable-плейбук ставится скиллом olympuz-<name> в каталог скиллов агента отдельно. Каждый сканер - risk-ярус (shell/net), грант узлу разовый по D8, не приклеен к сиденью.",
   "scanners": [
     {
-      "name": "deimos",
+      "name": "deimoz",
       "class": "orchestrator",
       "gives": "ведёт цель recon->exploit->prove, каждую находку заворачивает в RED->GREEN-регрессию; нативная замена strix",
-      "playbook": "catalog/scanners/deimos.md"
+      "playbook": "catalog/scanners/deimoz.md"
     },
     {
       "name": "security-bounty-hunter",

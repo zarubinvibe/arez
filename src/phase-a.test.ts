@@ -5,7 +5,7 @@ import { classifyProof } from "./observed-red.ts";
 import type { Scanner } from "./catalog.ts";
 
 const scanner = (name: string): Scanner => ({ name, class: "x", gives: "y", playbook: "z.md" });
-const SIX = ["deimos", "security-bounty-hunter", "sast-scan", "secret-scan", "mcp-scan", "vuln-triage"].map(scanner);
+const SIX = ["deimoz", "security-bounty-hunter", "sast-scan", "secret-scan", "mcp-scan", "vuln-triage"].map(scanner);
 
 const hit = (surface: string, s: string): ReconHit => ({ surface, scanner: s });
 const attempt = (h: ReconHit, claimed: boolean, runnable: boolean): Attempt => ({
@@ -15,10 +15,10 @@ const attempt = (h: ReconHit, claimed: boolean, runnable: boolean): Attempt => (
   runnable,
 });
 
-test("оркестрация гонит все 6 сканеров в порядке каталога, deimos первым", () => {
+test("оркестрация гонит все 6 сканеров в порядке каталога, deimoz первым", () => {
   const r = runPlaybook(SIX, () => [], () => attempt(hit("_", "_"), false, false), () => classifyProof(1, 0));
   assert.deepEqual(r.scannersRun, SIX.map((s) => s.name));
-  assert.equal(r.scannersRun[0], "deimos");
+  assert.equal(r.scannersRun[0], "deimoz");
 });
 
 test("proven RED->GREEN -> находка, exit 0", () => {
@@ -32,7 +32,7 @@ test("proven RED->GREEN -> находка, exit 0", () => {
 });
 
 test("незапускаемый claim -> отклонён как теория, exit 1 (LIM-09)", () => {
-  const recon = (s: Scanner) => (s.name === "deimos" ? [hit("эндпойнт", s.name)] : []);
+  const recon = (s: Scanner) => (s.name === "deimoz" ? [hit("эндпойнт", s.name)] : []);
   const exploit = (h: ReconHit) => attempt(h, true, false); // claim без исполнимого эксплойта
   const r = runPlaybook(SIX, recon, exploit, () => classifyProof(1, 0));
   assert.equal(r.exitCode, 1);
@@ -41,7 +41,7 @@ test("незапускаемый claim -> отклонён как теория, 
 });
 
 test("полый тест (зелёный до фикса) -> отклонён как театр, exit 1 (LIM-08)", () => {
-  const recon = (s: Scanner) => (s.name === "deimos" ? [hit("x", s.name)] : []);
+  const recon = (s: Scanner) => (s.name === "deimoz" ? [hit("x", s.name)] : []);
   const exploit = (h: ReconHit) => attempt(h, true, true);
   const prove = () => classifyProof(0, 0); // green до фикса = полый
   const r = runPlaybook(SIX, recon, exploit, prove);
@@ -50,7 +50,7 @@ test("полый тест (зелёный до фикса) -> отклонён �
 });
 
 test("фикс не закрыл дыру -> отклонён, дыра открыта, exit 1", () => {
-  const recon = (s: Scanner) => (s.name === "deimos" ? [hit("x", s.name)] : []);
+  const recon = (s: Scanner) => (s.name === "deimoz" ? [hit("x", s.name)] : []);
   const exploit = (h: ReconHit) => attempt(h, true, true);
   const prove = () => classifyProof(1, 1); // красный до и после
   const r = runPlaybook(SIX, recon, exploit, prove);
@@ -69,7 +69,7 @@ test("незаявленная попытка -> честный сброс, ка
 });
 
 test("подделанный proof {kind:proven, preCode:0} НЕ проходит - вердикт из кодов (codex #3)", () => {
-  const recon = (s: Scanner) => (s.name === "deimos" ? [hit("x", s.name)] : []);
+  const recon = (s: Scanner) => (s.name === "deimoz" ? [hit("x", s.name)] : []);
   const exploit = (h: ReconHit) => attempt(h, true, true);
   // Лживый proof: kind говорит proven, но коды - полый тест (preCode 0). Гейт обязан пере-вывести из кодов.
   const forged = () => ({ real: true, kind: "proven" as const, preCode: 0, postCode: 1, reason: "fake" });

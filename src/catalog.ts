@@ -112,7 +112,7 @@ export function loadCatalog(root: string, playbookMustExist = true): CatalogResu
         }
       }
       // Деймос - оркестратор цепочки, без него шесть разрозненных сканеров, а не Деймос (REQ-28).
-      if (!names.has("deimos")) problems.push(`нет оркестратора deimos среди сканеров`);
+      if (!names.has("deimoz")) problems.push(`нет оркестратора deimoz среди сканеров`);
     }
   }
 

@@ -6,7 +6,7 @@
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/zarubinvibe/arez?style=flat&color=C9A87A)](https://github.com/zarubinvibe/arez/stargazers) [![Status](https://img.shields.io/badge/status-working-brightgreen.svg)](https://github.com/zarubinvibe/arez) [![Olympuz](https://img.shields.io/badge/olympuz-family-B8D6EA.svg)](https://github.com/zarubinvibe/athena#olympuz-family)
 
-<p align="center"><img src="docs/assets/pantheon/hero.png" alt="白色大理石的阿瑞斯站在古典石柱旁：带盔冠的战盔，一支枪尖朝下静置的长矛，一面圆盾，盾面上有一道从红变绿的线。干净的红线把已证明的发现带向外面；柔和的金线被他握在手中。" width="100%"></p>
+<p align="center"><img src="docs/assets/pantheon/hero.png" alt="白色大理石的阿瑞斯站在古典石柱旁：带盔冠的战盔，一支竖直、枪尖朝天的长矛，一面握在臂上的圆盾。盾面上有一道从红到绿的线。干净的红线把已证明的发现带向外面；柔和的金线被他握在手边。" width="100%"></p>
 
 <!-- owner-welcome:start -->
 
@@ -37,7 +37,7 @@
 
 Arez 就是阿瑞斯，Olympuz 家族里的红队之神，被单独切出来做成一个工具。它对目标跑一场真正的安全战役。它先画出攻击面，再跑利用，只有当一个测试被亲眼看着在有漏洞的代码上变红、修好后变绿，才算一条发现。
 
-这条回归之后就永远住在你自己的门禁里。它是完整的原生 Deimos，A 到 D 四个阶段，零外部依赖。它只在 127.0.0.1、在自己的沙箱里打活靶，绝不伸出你的机器。
+这条回归之后就永远住在你自己的门禁里。阿瑞斯向你的代码开战，找出它的缺陷并把它们修好。他不是独自作战。Deimoz 是他的儿子，是随他冲进每一场战斗的恐惧，也是这里的引擎：他跑完整场战役，把各个扫描器汇成一个结论。他发起攻击，用跑通利用来证明每一个洞，再用一条回归把修复锁死。零外部依赖。它只在 127.0.0.1、在自己的沙箱里打活靶。
 
 ## 它解决什么问题
 
@@ -292,7 +292,7 @@ claude   # or: codex
 
 ## 局限
 
-已经在跑：完整的原生 Deimos A-D、反表演内核、被 vendored 内核的 doctor，以及端到端的验收场景，全都通过门禁。接下来：当 Olympuz 蜂群组装时接上实时的 seat-adapter，以及一个可移植的沙箱，让活靶不只在 macOS 上起得来。
+已经在跑：完整的攻击流水线、反表演内核、被 vendored 内核的 doctor，以及端到端的验收场景，全都通过门禁。接下来：当 Olympuz 蜂群组装时接上实时的 seat-adapter，以及一个可移植的沙箱，让活靶不只在 macOS 上起得来。
 
 - 一
 - 场
@@ -433,7 +433,7 @@ claude   # or: codex
 - 赖
 - 。
 
-`docs/MASTER-PLAN.md` 按依赖排出 Deimos 的 A-D 阶段。`docs/ONBOARDING.md` 一步步带你完成第一次安装。`AGENTS.md` 存放教条与不变量。`SECURITY.md` 存放安全模型。`tests/CORPUS.md` 点名每一条探针。
+`docs/MASTER-PLAN.md` 按依赖排出四个攻击阶段。`docs/ONBOARDING.md` 一步步带你完成第一次安装。`AGENTS.md` 存放教条与不变量。`SECURITY.md` 存放安全模型。`tests/CORPUS.md` 点名每一条探针。
 
 ## 点亮星标与参与
 

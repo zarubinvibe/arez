@@ -8,7 +8,7 @@ cd ~/arez
 node bin/arez.ts gate
 ```
 
-There are no dependencies to install. The gate runs the whole test corpus, the scanner catalog, the vendored-core doctor, and the end-to-end Deimos A–D acceptance scenario. It must come back with zero failures and zero skips.
+There are no dependencies to install. The gate runs the whole test corpus, the scanner catalog, the vendored-core doctor, and the end-to-end Deimoz A–D acceptance scenario. It must come back with zero failures and zero skips.
 
 Two rules make a review short:
 

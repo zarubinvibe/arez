@@ -6,7 +6,7 @@ A red team that proves the hole by running it and locks it with a red-to-green r
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/zarubinvibe/arez?style=flat&color=C9A87A)](https://github.com/zarubinvibe/arez/stargazers) [![Status](https://img.shields.io/badge/status-working-brightgreen.svg)](https://github.com/zarubinvibe/arez) [![Olympuz](https://img.shields.io/badge/olympuz-family-B8D6EA.svg)](https://github.com/zarubinvibe/athena#olympuz-family)
 
-<p align="center"><img src="docs/assets/pantheon/hero.png" alt="Ares in white marble beside the classical column: a crested helmet, a spear held point-down at rest, and a round shield whose face carries one line that went from red to green. Clean red threads carry the proven finding outward; muted-gold threads stay held close in his hand." width="100%"></p>
+<p align="center"><img src="docs/assets/pantheon/hero.png" alt="Ares in white marble beside the classical column: a crested helmet, an upright spear with its blade to the sky, and a round shield held on his arm. On the shield face one line runs from red to green. Clean red threads carry the proven finding outward; muted-gold threads stay held close." width="100%"></p>
 
 <!-- owner-welcome:start -->
 
@@ -37,7 +37,7 @@ A red team that proves the hole by running it and locks it with a red-to-green r
 
 Arez is Ares, the red-team god of the Olympuz family, cut out as a standalone tool. It runs a real security campaign against a target. It maps the surface, runs the exploit, and counts a finding only after a test was watched going red on the broken code and green after the fix.
 
-The regression then lives in your own gate for good. It is the full native Deimos, phases A through D, with zero external dependencies. It hits a live target only on 127.0.0.1, under its own sandbox, and never reaches off your machine.
+The regression then lives in your own gate for good. Ares wages war on your code to find its flaws and fix them. He does not fight alone. Deimoz, his son, the dread that rode into every battle beside him, is the engine that runs the campaign and chains its scanners into one verdict. It attacks, proves each hole by running the exploit, and locks the fix with a regression. Zero external dependencies. It hits a live target only on 127.0.0.1, under its own sandbox.
 
 ## Why It Helps
 
@@ -536,7 +536,7 @@ The gate runs the tests in a separate process the attacking agent cannot reach, 
 
 ## Limits
 
-Working: the full native Deimos A to D, the anti-theater core, the vendored-core doctor, and the end-to-end acceptance scenario all pass the gate. Ahead: the live seat-adapter when the Olympuz swarm is assembled, and a portable sandbox so the live target runs beyond macOS.
+Working: the full attack pipeline, the anti-theater core, the vendored-core doctor, and the end-to-end acceptance scenario all pass the gate. Ahead: the live seat-adapter when the Olympuz swarm is assembled, and a portable sandbox so the live target runs beyond macOS.
 
 - O
 - n
@@ -873,7 +873,7 @@ Working: the full native Deimos A to D, the anti-theater core, the vendored-core
 - y
 - .
 
-`docs/MASTER-PLAN.md` sequences the Deimos phases A to D by dependency. `docs/ONBOARDING.md` walks a first install step by step. `AGENTS.md` holds the doctrine and the invariants. `SECURITY.md` holds the safety model. `tests/CORPUS.md` names every probe.
+`docs/MASTER-PLAN.md` sequences the four attack stages by dependency. `docs/ONBOARDING.md` walks a first install step by step. `AGENTS.md` holds the doctrine and the invariants. `SECURITY.md` holds the safety model. `tests/CORPUS.md` names every probe.
 
 ## Star And Contribute
 

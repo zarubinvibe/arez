@@ -14,7 +14,7 @@ test("реальный каталог arez валиден: сиденье ares, 
   assert.equal(r.ok, true, `проблемы: ${r.problems.join("; ")}`);
   assert.equal(r.catalog!.skills.scanners.length, 6);
   assert.equal(r.catalog!.models.daimons.length, 0);
-  assert.ok(r.catalog!.skills.scanners.some((s) => s.name === "deimos"));
+  assert.ok(r.catalog!.skills.scanners.some((s) => s.name === "deimoz"));
 });
 
 // Помощник: собрать временный каталог из объектов и провалидировать без проверки плейбуков на диске.
@@ -32,7 +32,7 @@ function withCatalog(models: unknown, skills: unknown) {
 
 const goodModels = { seat: "ares", provider: "claude", minTier: "top", daimons: [], tiers: {} };
 const sc = (name: string) => ({ name, class: "x", gives: "y", playbook: "z.md" });
-const goodSkills = { scanners: ["deimos", "a", "b", "c", "d", "e"].map(sc) };
+const goodSkills = { scanners: ["deimoz", "a", "b", "c", "d", "e"].map(sc) };
 
 test("daimons не пуст - RED (LIM-01: Арес лист)", () => {
   const r = withCatalog({ ...goodModels, daimons: ["scout"] }, goodSkills);
@@ -47,15 +47,15 @@ test("minTier ниже top - RED (вниз по силе Ареса не сдв�
 });
 
 test("не 6 сканеров - RED (REQ-19)", () => {
-  const r = withCatalog(goodModels, { scanners: ["deimos", "a", "b"].map(sc) });
+  const r = withCatalog(goodModels, { scanners: ["deimoz", "a", "b"].map(sc) });
   assert.equal(r.ok, false);
   assert.ok(r.problems.some((p) => p.includes("сканеров")));
 });
 
-test("нет оркестратора deimos - RED (REQ-28)", () => {
+test("нет оркестратора deimoz - RED (REQ-28)", () => {
   const r = withCatalog(goodModels, { scanners: ["a", "b", "c", "d", "e", "f"].map(sc) });
   assert.equal(r.ok, false);
-  assert.ok(r.problems.some((p) => p.includes("deimos")));
+  assert.ok(r.problems.some((p) => p.includes("deimoz")));
 });
 
 test("провайдер не claude - RED", () => {
@@ -75,7 +75,7 @@ test("плейбук вне санкционированного каталог�
   mkdirSync(join(dir, "catalog"));
   writeFileSync(join(dir, "catalog/models.json"), JSON.stringify(goodModels));
   // playbook="." (каталог) раньше проходил existsSync; теперь нужен обычный .md в vendor/porting-src/skills/
-  const bad = { scanners: ["deimos", "a", "b", "c", "d", "e"].map((n) => ({ name: n, class: "x", gives: "y", playbook: "." })) };
+  const bad = { scanners: ["deimoz", "a", "b", "c", "d", "e"].map((n) => ({ name: n, class: "x", gives: "y", playbook: "." })) };
   writeFileSync(join(dir, "catalog/skills.json"), JSON.stringify(bad));
   try {
     const r = loadCatalog(dir, true); // playbookMustExist

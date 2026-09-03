@@ -21,8 +21,8 @@ export class SeatUnavailable extends Error {}
 
 /**
  * Собирает дескриптор сиденья Ареса из каталога arez. Бросает, если каталог не держит инварианты - на
- * сиденье Ареса не встаёт полу-собранный бог. deimos среди навыков, но НЕ как имя бога: сиденье - ares,
- * не deimos (LIM-03: deimos на сиденье Ареса ломает assertDaimonAllowed).
+ * сиденье Ареса не встаёт полу-собранный бог. deimoz среди навыков, но НЕ как имя бога: сиденье - ares,
+ * не deimoz (LIM-03: deimoz на сиденье Ареса ломает assertDaimonAllowed).
  */
 export function aresSeat(root: string): AresSeat {
   const cat = loadCatalog(root, false);

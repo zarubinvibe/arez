@@ -15,12 +15,12 @@ test("aresSeat: дескриптор сиденья из каталога дом
   assert.equal(seat.minTier, "top");
   assert.deepEqual(seat.daimons, []); // LIM-01
   assert.equal(seat.skills.length, 6); // REQ-19
-  assert.ok(seat.skills.includes("deimos"));
+  assert.ok(seat.skills.includes("deimoz"));
 });
 
-test("сиденье - ares, а не deimos: имя бога не совпадает с навыком-оркестратором (LIM-03)", () => {
+test("сиденье - ares, а не deimoz: имя бога не совпадает с навыком-оркестратором (LIM-03)", () => {
   const seat = aresSeat(ROOT);
-  assert.notEqual(seat.god as string, "deimos");
+  assert.notEqual(seat.god as string, "deimoz");
 });
 
 test("полу-собранный каталог -> SeatUnavailable, на сиденье не встаёт", () => {

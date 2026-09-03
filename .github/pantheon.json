@@ -19,15 +19,15 @@
     },
     "hero": {
       "source_path": "docs/assets/pantheon/hero-source.png",
-      "source_sha256": "9df79a869c5732ccf25d5d1e3da1dba1f189dcc23f18cf0713cf6fe262c459d4",
+      "source_sha256": "63ce636bde19eb81f74a29acfff450e81e598c53d5f4f26cf52b2e07b2171880",
       "published_path": "docs/assets/pantheon/hero.png",
-      "published_sha256": "1f3fbc32acce23a2eb8480a4b8c9c77f010553e2c0d8eb2e8688d4a60b037101"
+      "published_sha256": "06e6f6dbdf0666d4c10dcbdd035fa64f709a8a635c096989be60a1beac7157c0"
     },
     "emblem": {
       "source_path": "docs/assets/pantheon/emblem-source.png",
-      "source_sha256": "66d0045c3976e3c3f9cd9acf6f904653a1aac8e53abf960704ba8e31664524a6",
+      "source_sha256": "e60dedf88f1cef120668a117bfaadb37ba4b3f9cdbd25581e41bb0010dd8d6fe",
       "published_path": "docs/assets/pantheon/emblem.png",
-      "published_sha256": "66d0045c3976e3c3f9cd9acf6f904653a1aac8e53abf960704ba8e31664524a6"
+      "published_sha256": "e60dedf88f1cef120668a117bfaadb37ba4b3f9cdbd25581e41bb0010dd8d6fe"
     },
     "stages": [
       {
@@ -70,32 +70,32 @@
     "bible": {
       "character_sheet": {
         "published_path": "docs/assets/pantheon/bible-character.png",
-        "published_sha256": "8895d1d05263ac02f01915555b7f3f2704dcc43605363107bec8775dce0be308",
-        "alt": "Лист персонажа: Арес из белого мрамора в четырех видах со шлемом, копьем и круглым щитом с красно-зеленым знаком, рядом этюды шлема и оружия у колонны"
+        "published_sha256": "c4356dbfd6f40df733153111a68762a3179e964b827a5801f8a08f1df1624053",
+        "alt": "Лист персонажа: Арес из белого мрамора в четырех видах с вертикальным копьем острием вверх и круглым щитом со светящимся знаком red-to-green, рядом этюд его сына Деймоза в атаке и малые этюды шлема и щита"
       },
       "prop_sheet": {
         "published_path": "docs/assets/pantheon/bible-props.png",
-        "published_sha256": "99e5ad96181d7406042df9fd8f684b717104c10cff6f2910b83aec7f92684aae",
-        "alt": "Лист реквизита на слоновой кости: гребенчатый шлем, бронзовое копье, круглый щит с красно-зеленой линией, колонна, моток красной нити и моток золотой нити"
+        "published_sha256": "469bac21cd6d152e3acf58d764d540d901024367cdb3d13389511a3efa4ad932",
+        "alt": "Лист реквизита на слоновой кости: гребенчатый шлем, копье, круглый щит со светящейся красно-зеленой линией, колонна, моток светящейся красной нити и моток золотой нити"
       }
     },
     "takt": {
       "source_path": "docs/assets/pantheon/takt.png",
-      "source_sha256": "6626b9f11d336956ea76e239bd04c3ea64e335e5a89ae2a9c9e1a664de034ab2",
+      "source_sha256": "f8754b343f1ffb16062ff308af82cac86ef136232ef1ac2941e35a6186ec52d2",
       "languages": {
         "en": {
           "published_path": "docs/assets/pantheon/takt-en.png",
-          "published_sha256": "6d987c9e6094cbc8df24b0ae5a44932a2a04358f0a4b623478da3e2a3df2a7e6",
+          "published_sha256": "2f1181fded703ebf5f7406c856c20a1ef95f48a4ed00c6b330b005e726edfb0a",
           "alt": "Four marble plates in a row engraved recon, exploit, prove, lock, linked by a red thread that turns green into the last plate, beside a fluted column"
         },
         "ru": {
           "published_path": "docs/assets/pantheon/takt-ru.png",
-          "published_sha256": "a37736a54738701e601c3a940bbf5a5e02bfc1f868b04eb5b6c0db4a96ee99d8",
+          "published_sha256": "81dfd0ae25c84760e58420bf11714667e78e6b491521a0e2770d7a698fb1634a",
           "alt": "Четыре мраморные плиты в ряд с надписями разведка, проба, доказать, замок, связанные красной нитью, которая зеленеет к последней плите, у каннелированной колонны"
         },
         "zh": {
           "published_path": "docs/assets/pantheon/takt-zh.png",
-          "published_sha256": "e9dbca0c82a20ad756d908bc53b4c72441303b798f6e222be56460d2b6fdf681",
+          "published_sha256": "3cea69ea18b7ab273b3b292d8cc6a23d9503e0c60818149a33b45c78f5a9d9e2",
           "alt": "四块大理石板一字排开，刻着侦察、利用、证明、落锁，一条红线把它们串起来，到最后一块变绿，旁边是一根凹槽石柱"
         }
       }
