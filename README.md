@@ -57,7 +57,7 @@ A campaign moves through four stages. Each hands the next something it can check
 
 <!-- workflow-diagram:start -->
 
-<p align="center"><img src="docs/assets/pantheon/takt-en.png" alt="Four marble plates in a row engraved recon, exploit, prove, lock, linked by a red thread that turns green into the last plate, beside a fluted column" width="100%"></p>
+<p align="center"><img src="docs/assets/pantheon/takt-en.png" alt="Four white marble tablets in a row with gold trim, linked by a glowing thread that runs signal-red across the first three and turns green into the last, beside a fluted marble column" width="100%"></p>
 
 <!-- workflow-diagram:end -->
 
@@ -72,11 +72,15 @@ A campaign moves through four stages. Each hands the next something it can check
 
 The first stage reads the target. It finds which endpoints answer, where input enters, and what the agent may touch. Nothing is attacked yet. A surface no scanner flagged is dropped honestly, not turned into a claim.
 
+<p align="center"><img src="docs/assets/pantheon/stage-recon.png" alt="Arez workflow stage 1: map the attack surface, drawn as a wide Pantheon marble scene" width="100%"></p>
+
 **You get:** a map of trust boundaries and input points, ready for the exploit stage.
 
 ### Step 2: Run the exploit
 
 Ares runs the real exploit against the target. It runs on 127.0.0.1, under its own sandbox. What comes back is an exit code, not a paragraph. A claim of "theoretically an attacker could" is refused. An exploit that will not run is not a finding.
+
+<p align="center"><img src="docs/assets/pantheon/stage-exploit.png" alt="Arez workflow stage 2: run the exploit, drawn as a wide Pantheon marble scene" width="100%"></p>
 
 **You get:** an executed exploit with a real exit code, or an honest drop.
 
@@ -84,11 +88,15 @@ Ares runs the real exploit against the target. It runs on 127.0.0.1, under its o
 
 The proof is not the agent's word. A separate coordinator runs the exploit test on the unfixed tree and sees it fail. Then it runs on the fixed tree and sees it pass. Red before, green after: that is proof. A test already green before the fix is hollow, and thrown out.
 
+<p align="center"><img src="docs/assets/pantheon/stage-prove.png" alt="Arez workflow stage 3: prove red to green, drawn as a wide Pantheon marble scene" width="100%"></p>
+
 **You get:** an observed red-to-green, judged by exit code out of the agent's reach.
 
 ### Step 4: Lock the regression
 
 The test that proved the hole becomes a permanent regression. Every later run goes red the moment the flaw returns. The posture ratchets tighter over time. It is not rescanned from scratch. This is what separates Arez from a scanner that hands back a report and forgets.
+
+<p align="center"><img src="docs/assets/pantheon/stage-lock.png" alt="Arez workflow stage 4: lock the regression, drawn as a wide Pantheon marble scene" width="100%"></p>
 
 **You get:** a permanent test, red on the flaw forever, living in your own gate.
 

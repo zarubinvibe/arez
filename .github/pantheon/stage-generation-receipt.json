@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "kind": "pantheon-generation",
+  "selection_mode": "managed-frontier",
+  "runtime": "codex",
+  "tool": "image_gen",
+  "route_id": "codex:image_gen:managed-frontier",
+  "model": {
+    "id": "provider-managed",
+    "revision": "provider-managed",
+    "tier": "frontier"
+  },
+  "quality": "highest",
+  "generation_id": "arez-stage-2026-09-04",
+  "generated_at": "2026-09-04T00:20:00.000Z",
+  "capability_snapshot": {
+    "checked_at": "2026-09-04T00:20:00.000Z",
+    "routes": [
+      {
+        "id": "codex:image_gen:managed-frontier",
+        "rank": 1,
+        "available": true,
+        "tier": "frontier",
+        "quality": "highest",
+        "model": {
+          "id": "provider-managed",
+          "revision": "provider-managed",
+          "tier": "frontier"
+        }
+      }
+    ]
+  },
+  "prompt": {
+    "path": ".github/pantheon/stage-prompt.txt",
+    "sha256": "33e3770eae1a08126190db6c34fd92d1dc2428660444898260aa0e1fc2bfcebb"
+  },
+  "references": [
+    {
+      "role": "style-anchor",
+      "sha256": "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2"
+    },
+    {
+      "role": "column",
+      "sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+    }
+  ],
+  "outputs": [
+    {
+      "role": "stage-01-recon",
+      "path": "docs/assets/pantheon/stage-recon.png",
+      "sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910"
+    },
+    {
+      "role": "stage-02-exploit",
+      "path": "docs/assets/pantheon/stage-exploit.png",
+      "sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee"
+    },
+    {
+      "role": "stage-03-prove",
+      "path": "docs/assets/pantheon/stage-prove.png",
+      "sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c"
+    },
+    {
+      "role": "stage-04-lock",
+      "path": "docs/assets/pantheon/stage-lock.png",
+      "sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "codex-managed",
+      "route_id": "codex:image_gen:managed-frontier",
+      "generation_id": "arez-stage-2026-09-04",
+      "quality": "highest",
+      "model": {
+        "id": "provider-managed",
+        "revision": "provider-managed",
+        "tier": "frontier"
+      },
+      "prompt_sha256": "33e3770eae1a08126190db6c34fd92d1dc2428660444898260aa0e1fc2bfcebb",
+      "reference_sha256": [
+        "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
+        "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+      ],
+      "outputs": [
+        {
+          "role": "stage-01-recon",
+          "source_sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910",
+          "published_sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910"
+        },
+        {
+          "role": "stage-02-exploit",
+          "source_sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee",
+          "published_sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee"
+        },
+        {
+          "role": "stage-03-prove",
+          "source_sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c",
+          "published_sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c"
+        },
+        {
+          "role": "stage-04-lock",
+          "source_sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231",
+          "published_sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231"
+        }
+      ]
+    }
+  ],
+  "winner_id": "codex-managed"
+}

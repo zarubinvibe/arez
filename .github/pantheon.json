@@ -37,7 +37,11 @@
         "title_zh": "画出攻击面",
         "diagram_en": "Recon",
         "diagram_ru": "Разведка",
-        "diagram_zh": "侦察"
+        "diagram_zh": "侦察",
+        "published_path": "docs/assets/pantheon/stage-recon.png",
+        "published_sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910",
+        "source_path": "docs/assets/pantheon/stage-recon.png",
+        "source_sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910"
       },
       {
         "id": "exploit",
@@ -46,7 +50,11 @@
         "title_zh": "跑利用",
         "diagram_en": "Exploit",
         "diagram_ru": "Проба",
-        "diagram_zh": "利用"
+        "diagram_zh": "利用",
+        "published_path": "docs/assets/pantheon/stage-exploit.png",
+        "published_sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee",
+        "source_path": "docs/assets/pantheon/stage-exploit.png",
+        "source_sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee"
       },
       {
         "id": "prove",
@@ -55,7 +63,11 @@
         "title_zh": "看红转绿",
         "diagram_en": "Prove",
         "diagram_ru": "Доказать",
-        "diagram_zh": "证明"
+        "diagram_zh": "证明",
+        "published_path": "docs/assets/pantheon/stage-prove.png",
+        "published_sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c",
+        "source_path": "docs/assets/pantheon/stage-prove.png",
+        "source_sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c"
       },
       {
         "id": "lock",
@@ -64,7 +76,11 @@
         "title_zh": "锁死回归",
         "diagram_en": "Lock",
         "diagram_ru": "Замок",
-        "diagram_zh": "落锁"
+        "diagram_zh": "落锁",
+        "published_path": "docs/assets/pantheon/stage-lock.png",
+        "published_sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231",
+        "source_path": "docs/assets/pantheon/stage-lock.png",
+        "source_sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231"
       }
     ],
     "bible": {
@@ -81,22 +97,22 @@
     },
     "takt": {
       "source_path": "docs/assets/pantheon/takt.png",
-      "source_sha256": "f8754b343f1ffb16062ff308af82cac86ef136232ef1ac2941e35a6186ec52d2",
+      "source_sha256": "b10bbf94a6e003c5f06ccc69c99421f9cf70c45a3e32727ca88f07fbd2fb1ad6",
       "languages": {
         "en": {
           "published_path": "docs/assets/pantheon/takt-en.png",
-          "published_sha256": "2f1181fded703ebf5f7406c856c20a1ef95f48a4ed00c6b330b005e726edfb0a",
-          "alt": "Four marble plates in a row engraved recon, exploit, prove, lock, linked by a red thread that turns green into the last plate, beside a fluted column"
+          "published_sha256": "b10bbf94a6e003c5f06ccc69c99421f9cf70c45a3e32727ca88f07fbd2fb1ad6",
+          "alt": "Four white marble tablets in a row with gold trim, linked by a glowing thread that runs signal-red across the first three and turns green into the last, beside a fluted marble column"
         },
         "ru": {
           "published_path": "docs/assets/pantheon/takt-ru.png",
-          "published_sha256": "81dfd0ae25c84760e58420bf11714667e78e6b491521a0e2770d7a698fb1634a",
-          "alt": "Четыре мраморные плиты в ряд с надписями разведка, проба, доказать, замок, связанные красной нитью, которая зеленеет к последней плите, у каннелированной колонны"
+          "published_sha256": "b10bbf94a6e003c5f06ccc69c99421f9cf70c45a3e32727ca88f07fbd2fb1ad6",
+          "alt": "Четыре белые мраморные плиты в ряд с золотой окантовкой, связанные светящейся нитью: красная на первых трех и зеленеющая к последней, рядом каннелированная мраморная колонна"
         },
         "zh": {
           "published_path": "docs/assets/pantheon/takt-zh.png",
-          "published_sha256": "3cea69ea18b7ab273b3b292d8cc6a23d9503e0c60818149a33b45c78f5a9d9e2",
-          "alt": "四块大理石板一字排开，刻着侦察、利用、证明、落锁，一条红线把它们串起来，到最后一块变绿，旁边是一根凹槽石柱"
+          "published_sha256": "b10bbf94a6e003c5f06ccc69c99421f9cf70c45a3e32727ca88f07fbd2fb1ad6",
+          "alt": "四块带金边的白色大理石板一字排开，一条发光的线把它们串起来，前三块是信号红，到最后一块转成绿色，旁边是一根凹槽大理石柱"
         }
       }
     },
@@ -124,7 +140,9 @@
   },
   "receipts": {
     "generation_path": ".github/pantheon/generation-receipt.json",
-    "visual_judge_path": ".github/pantheon/visual-judge-receipt.json"
+    "visual_judge_path": ".github/pantheon/visual-judge-receipt.json",
+    "stage_generation_path": ".github/pantheon/stage-generation-receipt.json",
+    "stage_visual_judge_path": ".github/pantheon/stage-visual-judge-receipt.json"
   },
   "dress": "full"
 }

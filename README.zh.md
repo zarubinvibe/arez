@@ -57,7 +57,7 @@ Arez 不干这套。只有当利用被真正执行、修复被亲眼看着把洞
 
 <!-- workflow-diagram:start -->
 
-<p align="center"><img src="docs/assets/pantheon/takt-zh.png" alt="四块大理石板一字排开，刻着侦察、利用、证明、落锁，一条红线把它们串起来，到最后一块变绿，旁边是一根凹槽石柱" width="100%"></p>
+<p align="center"><img src="docs/assets/pantheon/takt-zh.png" alt="四块带金边的白色大理石板一字排开，一条发光的线把它们串起来，前三块是信号红，到最后一块转成绿色，旁边是一根凹槽大理石柱" width="100%"></p>
 
 <!-- workflow-diagram:end -->
 
@@ -72,11 +72,15 @@ Arez 不干这套。只有当利用被真正执行、修复被亲眼看着把洞
 
 第一步读清楚目标：哪些接口会应答，输入从哪里进来，智能体被允许碰什么。这一步还不攻击。没有扫描器标出的面，会被老实地放掉，而不是硬凑成一条发现。
 
+<p align="center"><img src="docs/assets/pantheon/stage-recon.png" alt="Pantheon 宽幅大理石场景：Arez 流水线第 1 步，画出攻击面" width="100%"></p>
+
 **你会得到：** 一张信任边界和输入点的地图，交给利用这一步。
 
 ### 第 2 步：跑利用
 
 Ares 在 127.0.0.1、在自己的沙箱里，对目标跑真实的利用。回来的是一个退出码，不是一段话。「理论上攻击者可以」这种说法被拒绝。跑不起来的利用，不算发现。
+
+<p align="center"><img src="docs/assets/pantheon/stage-exploit.png" alt="Pantheon 宽幅大理石场景：Arez 流水线第 2 步，跑利用" width="100%"></p>
 
 **你会得到：** 一次带真实退出码的已执行利用，或一次老实的放弃。
 
@@ -84,11 +88,15 @@ Ares 在 127.0.0.1、在自己的沙箱里，对目标跑真实的利用。回�
 
 证明不靠智能体自己说。一个独立的协调者在没修的代码上跑利用测试，看它失败；再在修好的代码上跑，看它通过。修前红、修后绿，这才是证明。修之前就已是绿的测试是空的，会被扔掉。
 
+<p align="center"><img src="docs/assets/pantheon/stage-prove.png" alt="Pantheon 宽幅大理石场景：Arez 流水线第 3 步，证明红转绿" width="100%"></p>
+
 **你会得到：** 一次被亲眼看到的红转绿，由退出码判定，智能体够不着。
 
 ### 第 4 步：锁死回归
 
 证明了漏洞的那个测试，会变成一条永久的回归。之后每一次运行，只要缺陷一回来就立刻变红。防线随时间越收越紧，而不是每次从头再扫。这正是 Arez 和「交报告就忘」的扫描器不同的地方。
+
+<p align="center"><img src="docs/assets/pantheon/stage-lock.png" alt="Pantheon 宽幅大理石场景：Arez 流水线第 4 步，锁死回归" width="100%"></p>
 
 **你会得到：** 一条永久的测试，永远在缺陷上变红，就住在你自己的门禁里。
 
