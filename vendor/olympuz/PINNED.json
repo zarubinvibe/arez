@@ -1,0 +1,28 @@
+{
+  "source_repo": "olympuz",
+  "source_commit": "d836d1d18d1d37c3796e5ddc5670ce7b3fb34c5a",
+  "pinned_at": "2026-09-03",
+  "note": "sha256 вендоренного load-bearing ядра. Сверка против апстрима на чистой машине невозможна (апстрим - личный путь, сеть закрыта); дрейф ловит только ручной arez vendor. REQ-41, ратифицировано владельцем 03.09. Репин 03.09: личные пути <HOME> в иллюстративных комментариях sandbox.ts заменены на <HOME> для публичной выкладки (D-12: скраб+репин, не правка без репина).",
+  "files": [
+    {
+      "path": "vendor/olympuz/src/gate.ts",
+      "sha256": "bf2e3efc32cc3076e6f1e6560efaf9d352e8c636c041ebc373a0d2caec879ca4"
+    },
+    {
+      "path": "vendor/olympuz/src/land-gate-honesty.ts",
+      "sha256": "8971f796bc9aaf93f09f21b25dc40516477faf0f416c88f59bc1bc8c57791540"
+    },
+    {
+      "path": "vendor/olympuz/src/loop.ts",
+      "sha256": "c2d541852803f3c751351c358c76e67dbf14ad582287597d72745af39d7534d3"
+    },
+    {
+      "path": "vendor/olympuz/src/oracle.ts",
+      "sha256": "db5ba289b343175452aead487e5056f84b804aa7115452f25d6bdbf5e37ddc23"
+    },
+    {
+      "path": "vendor/olympuz/src/sandbox.ts",
+      "sha256": "c717e2de810545aeb2fb6d44a6541d1e01f963b560bf4ecfe1448a904e356138"
+    }
+  ]
+}

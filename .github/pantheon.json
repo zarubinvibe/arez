@@ -1,0 +1,130 @@
+{
+  "schema_version": 3,
+  "family_id": "zarubinvibe-pantheon",
+  "catalog_version": "2026-09-03",
+  "project": {
+    "slug": "arez",
+    "deity": "Ares",
+    "symbol": "crested war helmet, spear and round shield"
+  },
+  "visuals": {
+    "style_anchor_sha256": "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
+    "column_reference_sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd",
+    "presentation": {
+      "min_width": 1600,
+      "aspect_ratio": "16:9",
+      "readme_width": "100%",
+      "published_width": 1664,
+      "published_height": 936
+    },
+    "hero": {
+      "source_path": "docs/assets/pantheon/hero-source.png",
+      "source_sha256": "9df79a869c5732ccf25d5d1e3da1dba1f189dcc23f18cf0713cf6fe262c459d4",
+      "published_path": "docs/assets/pantheon/hero.png",
+      "published_sha256": "1f3fbc32acce23a2eb8480a4b8c9c77f010553e2c0d8eb2e8688d4a60b037101"
+    },
+    "emblem": {
+      "source_path": "docs/assets/pantheon/emblem-source.png",
+      "source_sha256": "66d0045c3976e3c3f9cd9acf6f904653a1aac8e53abf960704ba8e31664524a6",
+      "published_path": "docs/assets/pantheon/emblem.png",
+      "published_sha256": "66d0045c3976e3c3f9cd9acf6f904653a1aac8e53abf960704ba8e31664524a6"
+    },
+    "stages": [
+      {
+        "id": "recon",
+        "title_en": "Map the surface",
+        "title_ru": "Разметить поверхность",
+        "title_zh": "画出攻击面",
+        "diagram_en": "Recon",
+        "diagram_ru": "Разведка",
+        "diagram_zh": "侦察"
+      },
+      {
+        "id": "exploit",
+        "title_en": "Run the exploit",
+        "title_ru": "Запустить эксплойт",
+        "title_zh": "跑利用",
+        "diagram_en": "Exploit",
+        "diagram_ru": "Проба",
+        "diagram_zh": "利用"
+      },
+      {
+        "id": "prove",
+        "title_en": "Watch red to green",
+        "title_ru": "Увидеть red-to-green",
+        "title_zh": "看红转绿",
+        "diagram_en": "Prove",
+        "diagram_ru": "Доказать",
+        "diagram_zh": "证明"
+      },
+      {
+        "id": "lock",
+        "title_en": "Lock the regression",
+        "title_ru": "Запереть регрессию",
+        "title_zh": "锁死回归",
+        "diagram_en": "Lock",
+        "diagram_ru": "Замок",
+        "diagram_zh": "落锁"
+      }
+    ],
+    "bible": {
+      "character_sheet": {
+        "published_path": "docs/assets/pantheon/bible-character.png",
+        "published_sha256": "8895d1d05263ac02f01915555b7f3f2704dcc43605363107bec8775dce0be308",
+        "alt": "Лист персонажа: Арес из белого мрамора в четырех видах со шлемом, копьем и круглым щитом с красно-зеленым знаком, рядом этюды шлема и оружия у колонны"
+      },
+      "prop_sheet": {
+        "published_path": "docs/assets/pantheon/bible-props.png",
+        "published_sha256": "99e5ad96181d7406042df9fd8f684b717104c10cff6f2910b83aec7f92684aae",
+        "alt": "Лист реквизита на слоновой кости: гребенчатый шлем, бронзовое копье, круглый щит с красно-зеленой линией, колонна, моток красной нити и моток золотой нити"
+      }
+    },
+    "takt": {
+      "source_path": "docs/assets/pantheon/takt.png",
+      "source_sha256": "6626b9f11d336956ea76e239bd04c3ea64e335e5a89ae2a9c9e1a664de034ab2",
+      "languages": {
+        "en": {
+          "published_path": "docs/assets/pantheon/takt-en.png",
+          "published_sha256": "6d987c9e6094cbc8df24b0ae5a44932a2a04358f0a4b623478da3e2a3df2a7e6",
+          "alt": "Four marble plates in a row engraved recon, exploit, prove, lock, linked by a red thread that turns green into the last plate, beside a fluted column"
+        },
+        "ru": {
+          "published_path": "docs/assets/pantheon/takt-ru.png",
+          "published_sha256": "a37736a54738701e601c3a940bbf5a5e02bfc1f868b04eb5b6c0db4a96ee99d8",
+          "alt": "Четыре мраморные плиты в ряд с надписями разведка, проба, доказать, замок, связанные красной нитью, которая зеленеет к последней плите, у каннелированной колонны"
+        },
+        "zh": {
+          "published_path": "docs/assets/pantheon/takt-zh.png",
+          "published_sha256": "e9dbca0c82a20ad756d908bc53b4c72441303b798f6e222be56460d2b6fdf681",
+          "alt": "四块大理石板一字排开，刻着侦察、利用、证明、落锁，一条红线把它们串起来，到最后一块变绿，旁边是一根凹槽石柱"
+        }
+      }
+    },
+    "doc_pages": [
+      {
+        "path": "docs/ONBOARDING.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      },
+      {
+        "path": "docs/ONBOARDING.ru.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      },
+      {
+        "path": "docs/ONBOARDING.zh.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      }
+    ],
+    "doc_frames": {}
+  },
+  "receipts": {
+    "generation_path": ".github/pantheon/generation-receipt.json",
+    "visual_judge_path": ".github/pantheon/visual-judge-receipt.json"
+  },
+  "dress": "full"
+}

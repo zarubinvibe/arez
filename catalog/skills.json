@@ -1,0 +1,41 @@
+{
+  "note": "6 сканеров на сиденье Ареса (REQ-19/REQ-26). Деймос их ОРКЕСТРИРУЕТ в цепочку и в exit-код - не дублирует. Объявление и контракт каждого - в catalog/scanners/<name>.md; полный runnable-плейбук ставится скиллом olympuz-<name> в каталог скиллов агента отдельно. Каждый сканер - risk-ярус (shell/net), грант узлу разовый по D8, не приклеен к сиденью.",
+  "scanners": [
+    {
+      "name": "deimos",
+      "class": "orchestrator",
+      "gives": "ведёт цель recon->exploit->prove, каждую находку заворачивает в RED->GREEN-регрессию; нативная замена strix",
+      "playbook": "catalog/scanners/deimos.md"
+    },
+    {
+      "name": "security-bounty-hunter",
+      "class": "isolation-red-team",
+      "gives": "исполненный эксплойт против кода изоляции: побег из seatbelt/worktree, доступ к $HOME/секретам, боковой ход",
+      "playbook": "catalog/scanners/security-bounty-hunter.md"
+    },
+    {
+      "name": "sast-scan",
+      "class": "product-code",
+      "gives": "semgrep exit 1 на классе (SQLi/DOM-сток/eval/JWT-none/cmd-инъекция); своё taint-правило под доказанную дыру -> регрессия",
+      "playbook": "catalog/scanners/sast-scan.md"
+    },
+    {
+      "name": "secret-scan",
+      "class": "secrets",
+      "gives": "gitleaks exit 1 на утёкшем ключе; вакуум-guard (ноль просканированных файлов = exit 3, не зелёный)",
+      "playbook": "catalog/scanners/secret-scan.md"
+    },
+    {
+      "name": "mcp-scan",
+      "class": "mcp-descriptions",
+      "gives": "snyk-agent-scan: tool poisoning, rug-pull, toxic-flow в описаниях MCP-тулов; детерминированный пин, расхождение = exit 1",
+      "playbook": "catalog/scanners/mcp-scan.md"
+    },
+    {
+      "name": "vuln-triage",
+      "class": "prioritization",
+      "gives": "SSVC-очередь Track/Track*/Attend/Act со сроком вместо голого CVSS; ранжирует найденное, сам не ищет",
+      "playbook": "catalog/scanners/vuln-triage.md"
+    }
+  ]
+}
