@@ -1,1 +1,35 @@
-Two figures in white marble beside the classical fluted column: Ares, god of war, and his son Deimoz. Ares is the larger, disciplined and calm, the red team who proves a flaw and mends it. He wears a crested war helmet. His spear stands UPRIGHT and grounded: the wooden butt rests on the floor, the shaft rises vertically at his side, the bronze spearhead points UP toward the sky. The spear is never inverted and the blade never points down. His round hoplon shield is held on his forearm or rests upright against his leg on the ground; it never floats in the air. Beside him stands Deimoz, his son, a younger warrior in a plain helmet, the dread that rides into every battle with his father; Deimoz is the one who drives the attack, one hand extended toward a small marble tablet that stands for the code under test. From the shield and from Deimoz's hand, fine threads flow toward the tablet: clear signal-red threads that GLOW with a soft luminous halo, like gentle magic, carrying the proven finding into the open; a few muted-gold threads, also faintly glowing, stay held close. On the shield face one glowing line runs from a red circle to a green circle, a flaw proven and closed, red turning to green, proof not blood. Owner-authorized family exception: Ares and Deimoz use luminous signal red where the Pantheon family uses sky blue for flow, because together they are the red team. Warm ivory background, white marble, soft daylight from the upper left, gentle long shadows, generous empty space, calm and exact. The only glow in the frame is the fine magical halo along the threads; everything else stays clean daylight marble. No dark background, no fire, no spilled blood, no chariot, no fallen bodies, no neon signage, no smoky cinematic lighting. No readable text.
+Сгенерируй ВЕСЬ набор картинок Пантеона для arez ОДНОЙ ПОСЛЕДОВАТЕЛЬНОСТЬЮ, не порознь. Правило (записано в самообучении владельца): кадры, сгенеренные независимо, расходятся между собой - тот же персонаж выходит с другим лицом/пропорциями/мрамором. Поэтому каждый следующий кадр ОБЯЗАН получать уже принятый кадр КАРТИНКОЙ в references и явную инструкцию «воспроизведи этих персонажей точно как на референсе, не переизобретай их» - а не только текстовое описание.
+
+Референсы канона (передавай в references КАЖДОГО вызова, плюс принятые кадры):
+- style-anchor: the Pantheon family style-anchor reference
+- column: the Pantheon family column reference
+
+Оба персонажа (фиксируй раз и на всю серию): АРЕС - высокий воин из белого мрамора, гребенчатый шлем, копьё вертикально древком в пол ОСТРИЁМ ВВЕРХ (никогда вниз), круглый щит на предплечье. ДЕЙМОЗ - его сын, младше и меньше ростом, простой шлем без гребня, ведёт атаку на маленькую мраморную табличку (это код). Светящиеся нити (владелец разрешил красный вместо синего - красная команда): красная = находка/атака, зелёная = закрыто/заперто. Фон тёплая слоновая кость, дневной свет слева-сверху, каннелированная колонна в кадре, спокойствие. НОЛЬ читаемого текста на всех кадрах без исключения - ни единой буквы, ни цифры (подписи только в markdown, не на картинке).
+
+Рабочая директория - ~/Проекты/arez. Пути ниже относительны от неё.
+
+ПОРЯДОК (строго последовательно, каждый следующий шаг получает референсом ФАЙЛ предыдущего принятого кадра из этого списка, плюс style-anchor и column):
+
+1. docs/assets/pantheon/hero-source.png (16:9, >=1664x936) - Арес и Деймоз в полный рост у колонны, Деймоз тянется к мраморной табличке-коду, светящиеся красные нити от щита и руки Деймоза к табличке, на щите red-to-green. ЭТО ОПОРНЫЙ КАДР ВСЕЙ СЕРИИ - лица, пропорции, доспехи, оттенок мрамора здесь фиксируются раз навсегда.
+
+2. docs/assets/pantheon/emblem-source.png (КВАДРАТ 1254x1254) - референс: hero-source.png (шаг 1) + style-anchor + column. Инструкция: "reproduce Ares and Deimoz exactly as in the reference image - same faces, same proportions, same armor, same marble tone - composed into a round marble medallion with the column". Мраморный медальон с теми же двумя фигурами.
+
+3. docs/assets/pantheon/bible-character.png (16:9) - референс: hero-source.png + style-anchor + column. Лист персонажа: Арес в четырёх видах (анфас/три четверти/профиль/со спины), лицо и пропорции ТОЧНО как в hero-source, плюс отдельный этюд Деймоза (тоже точно как в hero-source), плюс малые этюды шлема и щита.
+
+4. docs/assets/pantheon/bible-props.png (16:9) - референс: hero-source.png + style-anchor + column. Лист реквизита: тот же шлем, то же копьё, тот же щит (тот же орнамент, тот же оттенок мрамора), что на hero-source, разложены по одному, плюс моток светящейся красной нити и моток золотой нити, колонна.
+
+5. docs/assets/pantheon/doc-onboarding.png (16:9) - референс: hero-source.png + style-anchor + column. Арес и Деймоз (те же лица) у колонны, Деймоз указывает на мраморную табличку, светящаяся красная нить от щита.
+
+6. docs/assets/pantheon/stage-recon.png (16:9) - референс: hero-source.png + style-anchor + column. Те же Арес и Деймоз: Деймоз наклонился, изучает табличку-код, нити ещё не запущены.
+
+7. docs/assets/pantheon/stage-exploit.png (16:9) - референс: hero-source.png + stage-recon.png (шаг 6) + style-anchor + column. Те же фигуры: Деймоз бьёт светящейся красной нитью в табличку.
+
+8. docs/assets/pantheon/stage-prove.png (16:9) - референс: hero-source.png + stage-exploit.png (шаг 7) + style-anchor + column. Те же фигуры: Арес поднимает щит, светящаяся линия red-to-green.
+
+9. docs/assets/pantheon/stage-lock.png (16:9) - референс: hero-source.png + stage-prove.png (шаг 8) + style-anchor + column. Те же фигуры: табличка обвязана светящейся зелёной нитью, запечатана.
+
+10. docs/assets/pantheon/takt.png (16:9) - референс: style-anchor + column (БЕЗ фигур - это отдельная мраморная схема-фриз, персонажи тут не нужны). Четыре одинаковые вертикальные мраморные плиты в ряд, золотая окантовка, светящаяся нить (красная на первых трёх, зеленеет на четвёртой), колонна справа. НОЛЬ текста, ноль фигур.
+
+После каждой генерации посмотри результат (view_image) прежде чем использовать его как референс следующего шага - если персонажи разошлись с hero-source (другое лицо/пропорции/мрамор), перегенерируй тот шаг ещё раз с тем же референсом, пока не совпадёт, и только потом двигайся дальше.
+
+Сохрани ровно по этим десяти путям (перезаписать существующие), больше ничего в репозитории не меняй.

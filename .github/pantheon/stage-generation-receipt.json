@@ -11,10 +11,10 @@
     "tier": "frontier"
   },
   "quality": "highest",
-  "generation_id": "arez-stage-2026-09-04",
-  "generated_at": "2026-09-04T00:20:00.000Z",
+  "generation_id": "arez-sequence-stage-2026-09-04",
+  "generated_at": "2026-09-04T10:20:00.000Z",
   "capability_snapshot": {
-    "checked_at": "2026-09-04T00:20:00.000Z",
+    "checked_at": "2026-09-04T10:20:00.000Z",
     "routes": [
       {
         "id": "codex:image_gen:managed-frontier",
@@ -31,8 +31,8 @@
     ]
   },
   "prompt": {
-    "path": ".github/pantheon/stage-prompt.txt",
-    "sha256": "33e3770eae1a08126190db6c34fd92d1dc2428660444898260aa0e1fc2bfcebb"
+    "path": ".github/pantheon/prompt.txt",
+    "sha256": "4c289783a41bd1716d86e4a85308eafd073c1789b71214d3830e9bc0c9620e9e"
   },
   "references": [
     {
@@ -48,36 +48,40 @@
     {
       "role": "stage-01-recon",
       "path": "docs/assets/pantheon/stage-recon.png",
-      "sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910"
+      "sha256": "d0e18c8ac61fd2eb1eb9897ad70829c427f22d841fd2ce1476b387f9346e7151",
+      "published_sha256": "d0e18c8ac61fd2eb1eb9897ad70829c427f22d841fd2ce1476b387f9346e7151"
     },
     {
       "role": "stage-02-exploit",
       "path": "docs/assets/pantheon/stage-exploit.png",
-      "sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee"
+      "sha256": "fcad6e57c927bf441313a5b0fbf926449732198166aab8f6bc056955660c400b",
+      "published_sha256": "fcad6e57c927bf441313a5b0fbf926449732198166aab8f6bc056955660c400b"
     },
     {
       "role": "stage-03-prove",
       "path": "docs/assets/pantheon/stage-prove.png",
-      "sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c"
+      "sha256": "627c1a646c7740985012a498fb5c932385f8b126a9647ceba507425a8fb9cd68",
+      "published_sha256": "627c1a646c7740985012a498fb5c932385f8b126a9647ceba507425a8fb9cd68"
     },
     {
       "role": "stage-04-lock",
       "path": "docs/assets/pantheon/stage-lock.png",
-      "sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231"
+      "sha256": "161743619afb88c689c6309d08fe032ad3e4dc9553edd4436b6591cf98c73421",
+      "published_sha256": "161743619afb88c689c6309d08fe032ad3e4dc9553edd4436b6591cf98c73421"
     }
   ],
   "candidates": [
     {
       "id": "codex-managed",
       "route_id": "codex:image_gen:managed-frontier",
-      "generation_id": "arez-stage-2026-09-04",
+      "generation_id": "arez-sequence-stage-2026-09-04",
       "quality": "highest",
       "model": {
         "id": "provider-managed",
         "revision": "provider-managed",
         "tier": "frontier"
       },
-      "prompt_sha256": "33e3770eae1a08126190db6c34fd92d1dc2428660444898260aa0e1fc2bfcebb",
+      "prompt_sha256": "4c289783a41bd1716d86e4a85308eafd073c1789b71214d3830e9bc0c9620e9e",
       "reference_sha256": [
         "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
         "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
@@ -85,23 +89,23 @@
       "outputs": [
         {
           "role": "stage-01-recon",
-          "source_sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910",
-          "published_sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910"
+          "source_sha256": "d0e18c8ac61fd2eb1eb9897ad70829c427f22d841fd2ce1476b387f9346e7151",
+          "published_sha256": "d0e18c8ac61fd2eb1eb9897ad70829c427f22d841fd2ce1476b387f9346e7151"
         },
         {
           "role": "stage-02-exploit",
-          "source_sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee",
-          "published_sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee"
+          "source_sha256": "fcad6e57c927bf441313a5b0fbf926449732198166aab8f6bc056955660c400b",
+          "published_sha256": "fcad6e57c927bf441313a5b0fbf926449732198166aab8f6bc056955660c400b"
         },
         {
           "role": "stage-03-prove",
-          "source_sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c",
-          "published_sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c"
+          "source_sha256": "627c1a646c7740985012a498fb5c932385f8b126a9647ceba507425a8fb9cd68",
+          "published_sha256": "627c1a646c7740985012a498fb5c932385f8b126a9647ceba507425a8fb9cd68"
         },
         {
           "role": "stage-04-lock",
-          "source_sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231",
-          "published_sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231"
+          "source_sha256": "161743619afb88c689c6309d08fe032ad3e4dc9553edd4436b6591cf98c73421",
+          "published_sha256": "161743619afb88c689c6309d08fe032ad3e4dc9553edd4436b6591cf98c73421"
         }
       ]
     }

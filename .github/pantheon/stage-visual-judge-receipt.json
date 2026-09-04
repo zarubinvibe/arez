@@ -2,7 +2,7 @@
   "schema_version": 1,
   "kind": "pantheon-visual-judge",
   "receipt_id": "pantheon-stage-judge-arez-2026-09-04",
-  "checked_at": "2026-09-04T00:20:00.000Z",
+  "checked_at": "2026-09-04T10:20:00.000Z",
   "runtime": "claude",
   "tool": "read_image",
   "route_id": "claude:read_image:frontier",
@@ -22,13 +22,17 @@
     {
       "role": "column",
       "sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+    },
+    {
+      "role": "binding-frame",
+      "sha256": "19e617fed8f7f6d10ad90b4d5bf06a9d28c5659d7998166a373546932c85787d"
     }
   ],
   "outputs": [
     {
       "role": "stage-01-recon",
       "path": "docs/assets/pantheon/stage-recon.png",
-      "sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910",
+      "sha256": "d0e18c8ac61fd2eb1eb9897ad70829c427f22d841fd2ce1476b387f9346e7151",
       "verdict": "pass",
       "hard_constraints": {
         "column": true,
@@ -58,12 +62,12 @@
         "series-coherence": 5,
         "stage-meaning": 5
       },
-      "note": "Разведка: Деймоз наклонился и изучает мраморную табличку-код, Арес рядом с вертикальным копьем, нити не запущены."
+      "note": "Разведка: Деймоз изучает табличку-код (то же лицо и доспехи, что в hero), нити не запущены; Арес наготове с вертикальным копьем."
     },
     {
       "role": "stage-02-exploit",
       "path": "docs/assets/pantheon/stage-exploit.png",
-      "sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee",
+      "sha256": "fcad6e57c927bf441313a5b0fbf926449732198166aab8f6bc056955660c400b",
       "verdict": "pass",
       "hard_constraints": {
         "column": true,
@@ -93,12 +97,12 @@
         "series-coherence": 5,
         "stage-meaning": 5
       },
-      "note": "Проба: Деймоз бьет светящейся красной нитью в табличку-код, Арес наготове."
+      "note": "Проба: Деймоз бьет светящейся красной нитью в табличку; лица и мрамор держатся против hero и предыдущего кадра цепочки."
     },
     {
       "role": "stage-03-prove",
       "path": "docs/assets/pantheon/stage-prove.png",
-      "sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c",
+      "sha256": "627c1a646c7740985012a498fb5c932385f8b126a9647ceba507425a8fb9cd68",
       "verdict": "pass",
       "hard_constraints": {
         "column": true,
@@ -128,12 +132,12 @@
         "series-coherence": 5,
         "stage-meaning": 5
       },
-      "note": "Доказательство: Арес поднял щит, на нем светящаяся линия red-to-green, Деймоз смотрит."
+      "note": "Доказательство: Арес поднимает щит с линией red-to-green; та же фигура, что во всей серии."
     },
     {
       "role": "stage-04-lock",
       "path": "docs/assets/pantheon/stage-lock.png",
-      "sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231",
+      "sha256": "161743619afb88c689c6309d08fe032ad3e4dc9553edd4436b6591cf98c73421",
       "verdict": "pass",
       "hard_constraints": {
         "column": true,
@@ -163,7 +167,7 @@
         "series-coherence": 5,
         "stage-meaning": 5
       },
-      "note": "Замок: табличка-код обвязана светящейся зеленой нитью и запечатана, Арес и Деймоз над ней."
+      "note": "Замок: табличка обвязана светящейся зеленой нитью и запечатана, атаки нет; лица и мрамор держатся до конца цепочки."
     }
   ]
 }

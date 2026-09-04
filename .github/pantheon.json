@@ -19,15 +19,15 @@
     },
     "hero": {
       "source_path": "docs/assets/pantheon/hero-source.png",
-      "source_sha256": "63ce636bde19eb81f74a29acfff450e81e598c53d5f4f26cf52b2e07b2171880",
+      "source_sha256": "19e617fed8f7f6d10ad90b4d5bf06a9d28c5659d7998166a373546932c85787d",
       "published_path": "docs/assets/pantheon/hero.png",
-      "published_sha256": "06e6f6dbdf0666d4c10dcbdd035fa64f709a8a635c096989be60a1beac7157c0"
+      "published_sha256": "e513886029de9ace84dd6e4c5f2fec9656a31cf9c76193400e90bfbf9f5eda03"
     },
     "emblem": {
       "source_path": "docs/assets/pantheon/emblem-source.png",
-      "source_sha256": "e60dedf88f1cef120668a117bfaadb37ba4b3f9cdbd25581e41bb0010dd8d6fe",
+      "source_sha256": "cc2000c65cfafdf1768294ca07492c7925368b35d2b8f75cb694a2434ffb9e47",
       "published_path": "docs/assets/pantheon/emblem.png",
-      "published_sha256": "e60dedf88f1cef120668a117bfaadb37ba4b3f9cdbd25581e41bb0010dd8d6fe"
+      "published_sha256": "cc2000c65cfafdf1768294ca07492c7925368b35d2b8f75cb694a2434ffb9e47"
     },
     "stages": [
       {
@@ -39,9 +39,9 @@
         "diagram_ru": "Разведка",
         "diagram_zh": "侦察",
         "published_path": "docs/assets/pantheon/stage-recon.png",
-        "published_sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910",
+        "published_sha256": "d0e18c8ac61fd2eb1eb9897ad70829c427f22d841fd2ce1476b387f9346e7151",
         "source_path": "docs/assets/pantheon/stage-recon.png",
-        "source_sha256": "8ce44577bebbecc4148a601559d7733c0a856d286f91be6f98907ce5f09bb910"
+        "source_sha256": "d0e18c8ac61fd2eb1eb9897ad70829c427f22d841fd2ce1476b387f9346e7151"
       },
       {
         "id": "exploit",
@@ -52,9 +52,9 @@
         "diagram_ru": "Проба",
         "diagram_zh": "利用",
         "published_path": "docs/assets/pantheon/stage-exploit.png",
-        "published_sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee",
+        "published_sha256": "fcad6e57c927bf441313a5b0fbf926449732198166aab8f6bc056955660c400b",
         "source_path": "docs/assets/pantheon/stage-exploit.png",
-        "source_sha256": "6e55404836642d58ac5eb25b33ddf26fb167c6e1311d5929bfb8808c861ee7ee"
+        "source_sha256": "fcad6e57c927bf441313a5b0fbf926449732198166aab8f6bc056955660c400b"
       },
       {
         "id": "prove",
@@ -65,9 +65,9 @@
         "diagram_ru": "Доказать",
         "diagram_zh": "证明",
         "published_path": "docs/assets/pantheon/stage-prove.png",
-        "published_sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c",
+        "published_sha256": "627c1a646c7740985012a498fb5c932385f8b126a9647ceba507425a8fb9cd68",
         "source_path": "docs/assets/pantheon/stage-prove.png",
-        "source_sha256": "33ed4d0f3344db5d62667d482a283abed17e2b8ecee50978006fd6e5e4b61a7c"
+        "source_sha256": "627c1a646c7740985012a498fb5c932385f8b126a9647ceba507425a8fb9cd68"
       },
       {
         "id": "lock",
@@ -78,40 +78,40 @@
         "diagram_ru": "Замок",
         "diagram_zh": "落锁",
         "published_path": "docs/assets/pantheon/stage-lock.png",
-        "published_sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231",
+        "published_sha256": "161743619afb88c689c6309d08fe032ad3e4dc9553edd4436b6591cf98c73421",
         "source_path": "docs/assets/pantheon/stage-lock.png",
-        "source_sha256": "56853d5a8158ab35dd28e1f59a4d193c008dee6b8605f850d5773d4ea13a4231"
+        "source_sha256": "161743619afb88c689c6309d08fe032ad3e4dc9553edd4436b6591cf98c73421"
       }
     ],
     "bible": {
       "character_sheet": {
         "published_path": "docs/assets/pantheon/bible-character.png",
-        "published_sha256": "c4356dbfd6f40df733153111a68762a3179e964b827a5801f8a08f1df1624053",
-        "alt": "Лист персонажа: Арес из белого мрамора в четырех видах с вертикальным копьем острием вверх и круглым щитом со светящимся знаком red-to-green, рядом этюд его сына Деймоза в атаке и малые этюды шлема и щита"
+        "published_sha256": "0fdaa57be248a57ce28063d0beba1ff23f6e6440ab0ee714fd4dc1cd5fd27be5",
+        "alt": "Лист персонажа Ареса, воспроизведенный точно как на опорном кадре hero: четыре вида (анфас, три четверти, профиль, со спины) с вертикальным копьем острием вверх и круглым щитом, рядом этюд его сына Деймоза и малые этюды шлема и щита"
       },
       "prop_sheet": {
         "published_path": "docs/assets/pantheon/bible-props.png",
-        "published_sha256": "469bac21cd6d152e3acf58d764d540d901024367cdb3d13389511a3efa4ad932",
-        "alt": "Лист реквизита на слоновой кости: гребенчатый шлем, копье, круглый щит со светящейся красно-зеленой линией, колонна, моток светящейся красной нити и моток золотой нити"
+        "published_sha256": "8ef283dafd7d1a305e1a4239b03c783b139db1bcf8b7ecb52070961e3d9d85af",
+        "alt": "Лист реквизита: тот же шлем, копье и щит, что в опорном кадре hero, разложены по одному на слоновой кости, плюс моток светящейся красной нити и моток золотой нити, колонна"
       }
     },
     "takt": {
       "source_path": "docs/assets/pantheon/takt.png",
-      "source_sha256": "b10bbf94a6e003c5f06ccc69c99421f9cf70c45a3e32727ca88f07fbd2fb1ad6",
+      "source_sha256": "10706ef55c522720b69b7dbc7672f729e0a7abc7e2b2150365ee28921d4f3a97",
       "languages": {
         "en": {
           "published_path": "docs/assets/pantheon/takt-en.png",
-          "published_sha256": "b10bbf94a6e003c5f06ccc69c99421f9cf70c45a3e32727ca88f07fbd2fb1ad6",
+          "published_sha256": "10706ef55c522720b69b7dbc7672f729e0a7abc7e2b2150365ee28921d4f3a97",
           "alt": "Four white marble tablets in a row with gold trim, linked by a glowing thread that runs signal-red across the first three and turns green into the last, beside a fluted marble column"
         },
         "ru": {
           "published_path": "docs/assets/pantheon/takt-ru.png",
-          "published_sha256": "b10bbf94a6e003c5f06ccc69c99421f9cf70c45a3e32727ca88f07fbd2fb1ad6",
+          "published_sha256": "10706ef55c522720b69b7dbc7672f729e0a7abc7e2b2150365ee28921d4f3a97",
           "alt": "Четыре белые мраморные плиты в ряд с золотой окантовкой, связанные светящейся нитью: красная на первых трех и зеленеющая к последней, рядом каннелированная мраморная колонна"
         },
         "zh": {
           "published_path": "docs/assets/pantheon/takt-zh.png",
-          "published_sha256": "b10bbf94a6e003c5f06ccc69c99421f9cf70c45a3e32727ca88f07fbd2fb1ad6",
+          "published_sha256": "10706ef55c522720b69b7dbc7672f729e0a7abc7e2b2150365ee28921d4f3a97",
           "alt": "四块带金边的白色大理石板一字排开，一条发光的线把它们串起来，前三块是信号红，到最后一块转成绿色，旁边是一根凹槽大理石柱"
         }
       }

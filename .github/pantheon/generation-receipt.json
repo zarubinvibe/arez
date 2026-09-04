@@ -11,10 +11,10 @@
     "tier": "frontier"
   },
   "quality": "highest",
-  "generation_id": "arez-pantheon-2026-09-03",
-  "generated_at": "2026-09-03T22:55:00.000Z",
+  "generation_id": "arez-sequence-2026-09-04",
+  "generated_at": "2026-09-04T10:20:00.000Z",
   "capability_snapshot": {
-    "checked_at": "2026-09-03T22:55:00.000Z",
+    "checked_at": "2026-09-04T10:20:00.000Z",
     "routes": [
       {
         "id": "codex:image_gen:managed-frontier",
@@ -32,7 +32,7 @@
   },
   "prompt": {
     "path": ".github/pantheon/prompt.txt",
-    "sha256": "81d016c66975371fc06ee43a543fb8eb5805d9fdabd2039fdc0475444eff6777"
+    "sha256": "4c289783a41bd1716d86e4a85308eafd073c1789b71214d3830e9bc0c9620e9e"
   },
   "references": [
     {
@@ -48,26 +48,28 @@
     {
       "role": "hero",
       "path": "docs/assets/pantheon/hero-source.png",
-      "sha256": "63ce636bde19eb81f74a29acfff450e81e598c53d5f4f26cf52b2e07b2171880"
+      "sha256": "19e617fed8f7f6d10ad90b4d5bf06a9d28c5659d7998166a373546932c85787d",
+      "published_sha256": "e513886029de9ace84dd6e4c5f2fec9656a31cf9c76193400e90bfbf9f5eda03"
     },
     {
       "role": "emblem",
       "path": "docs/assets/pantheon/emblem-source.png",
-      "sha256": "e60dedf88f1cef120668a117bfaadb37ba4b3f9cdbd25581e41bb0010dd8d6fe"
+      "sha256": "cc2000c65cfafdf1768294ca07492c7925368b35d2b8f75cb694a2434ffb9e47",
+      "published_sha256": "cc2000c65cfafdf1768294ca07492c7925368b35d2b8f75cb694a2434ffb9e47"
     }
   ],
   "candidates": [
     {
       "id": "codex-managed",
       "route_id": "codex:image_gen:managed-frontier",
-      "generation_id": "arez-pantheon-2026-09-03",
+      "generation_id": "arez-sequence-2026-09-04",
       "quality": "highest",
       "model": {
         "id": "provider-managed",
         "revision": "provider-managed",
         "tier": "frontier"
       },
-      "prompt_sha256": "81d016c66975371fc06ee43a543fb8eb5805d9fdabd2039fdc0475444eff6777",
+      "prompt_sha256": "4c289783a41bd1716d86e4a85308eafd073c1789b71214d3830e9bc0c9620e9e",
       "reference_sha256": [
         "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
         "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
@@ -75,13 +77,13 @@
       "outputs": [
         {
           "role": "hero",
-          "source_sha256": "63ce636bde19eb81f74a29acfff450e81e598c53d5f4f26cf52b2e07b2171880",
-          "published_sha256": "06e6f6dbdf0666d4c10dcbdd035fa64f709a8a635c096989be60a1beac7157c0"
+          "source_sha256": "19e617fed8f7f6d10ad90b4d5bf06a9d28c5659d7998166a373546932c85787d",
+          "published_sha256": "e513886029de9ace84dd6e4c5f2fec9656a31cf9c76193400e90bfbf9f5eda03"
         },
         {
           "role": "emblem",
-          "source_sha256": "e60dedf88f1cef120668a117bfaadb37ba4b3f9cdbd25581e41bb0010dd8d6fe",
-          "published_sha256": "e60dedf88f1cef120668a117bfaadb37ba4b3f9cdbd25581e41bb0010dd8d6fe"
+          "source_sha256": "cc2000c65cfafdf1768294ca07492c7925368b35d2b8f75cb694a2434ffb9e47",
+          "published_sha256": "cc2000c65cfafdf1768294ca07492c7925368b35d2b8f75cb694a2434ffb9e47"
         }
       ]
     }
