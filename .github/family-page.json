@@ -172,11 +172,22 @@
           "The sandbox the target runs under. It hits 127.0.0.1 only, cannot reach off your machine, and a canary proves the containment is real."
         ]
       ],
-      "safety": "Arez is an offensive tool built to be honest about its limits. It hits a live target only on 127.0.0.1, under its own OS-level sandbox, with zero host egress. It spawns no sub-agents: it is a leaf, on purpose, because fan-out multiplies the blast radius. It never runs Docker, raw sockets, or someone else's key. A step that needs a network or shell grant carries a one-time human gate.",
+      "safety": [
+        "Arez is an offensive tool, built to be honest about its own limits.",
+        "It hits a live target only on 127.0.0.1, under its own OS-level sandbox, with zero host egress.",
+        "It spawns no sub-agents. It is a leaf, on purpose, because fan-out multiplies the blast radius.",
+        "It never runs Docker, raw sockets, or someone else's key.",
+        "A step that needs a network or shell grant carries a one-time human gate."
+      ],
       "safety_tail": "The gate runs the tests in a separate process the attacking agent cannot reach, so the tool never judges its own patch. A hole that needs real egress off the machine is logged as held and unprovable, never dressed up as a win.",
-      "limits": "One campaign finds about half of what is there. Arez does not mistake a run for a full audit. It needs macOS for the live-target sandbox today; the gate and doctor run everywhere. The live hunt needs an agent CLI, Claude or Codex; without one, the gate and doctor still work. strix is a local reference bench only, never a dependency.",
+      "limits": [
+        "One campaign finds about half of what is there. Arez does not mistake a run for a full audit.",
+        "It needs macOS for the live-target sandbox today; the gate and doctor run everywhere.",
+        "The live hunt needs an agent CLI, Claude or Codex; without one, the gate and doctor still work.",
+        "strix is a local reference bench only, never a dependency."
+      ],
       "status": "Working: the full attack pipeline, the anti-theater core, the vendored-core doctor, and the end-to-end acceptance scenario all pass the gate. Ahead: the live seat-adapter when the Olympuz swarm is assembled, and a portable sandbox so the live target runs beyond macOS.",
-      "welcome": "Hello. I am a lawyer with two daughters and a coffee business, and I vibe-code my own tools at night. My agents run security passes on my code, and the honest ones kept slipping. A scanner would report a hole, I would trust it, and there was nothing there. Or a green test sat on top of a hole that never moved.\n\nSo Arez counts a finding only when it was executed. A test goes red on the broken code and green after the fix, watched by a separate process, and the regression stays in the gate for good. It hits a live target only on your own machine, on 127.0.0.1, under its own sandbox. If you want a red team that proves instead of guesses, take it and make it yours.",
+      "welcome": "Hi. I am not an engineer, I am a lawyer. I vibe-code my own tools for my own tasks.\n\nI understood that security is very important, so I built this instrument. It checks my code by actually running the attack, not by guessing. If a scanner cannot prove a hole is real, I do not want to hear about it, and now I do not have to: Arez only reports what it broke and fixed.\n\nIf it helps you the same way, take it and make it yours.",
       "quick_intro": "You need a Mac or Linux, Node.js 22 or newer, and git. For the live hunt you also want an agent in the terminal: `claude` or `codex`. Three doors from here, any of them works.",
       "quick_extra": "No Git? Download [the ZIP](https://github.com/zarubinvibe/arez/archive/refs/heads/main.zip), unpack it, and run the same `./install.sh` inside. Prefer an archive in the terminal? Take [the tarball](https://github.com/zarubinvibe/arez/archive/refs/heads/main.tar.gz). First time here? Open the project in Claude Code and run `/arez-setup`: the install goes as a conversation, one question at a time, and nothing runs without your yes.",
       "quick_result": "the installer greets you, checks what you already have, runs its own gate, and names honestly what will not work on your system.",
@@ -266,11 +277,22 @@
           "Песочница, под которой идет цель. Бьет только 127.0.0.1, наружу с машины не выходит, а канарейка доказывает, что изоляция настоящая."
         ]
       ],
-      "safety": "Arez это наступательный инструмент, построенный быть честным о своих пределах. Живую цель он бьет только на 127.0.0.1, под своей песочницей уровня ОС, с нулем host-egress. Под-агентов он не спавнит: он лист, намеренно, потому что фан-аут множит радиус поражения. Он никогда не гоняет Docker, raw-socket или чужой ключ. Шаг, которому нужен грант на сеть или shell, несет разовый человеческий гейт.",
+      "safety": [
+        "Arez это наступательный инструмент, построенный быть честным о своих пределах.",
+        "Живую цель он бьет только на 127.0.0.1, под своей песочницей уровня ОС, с нулем host-egress.",
+        "Под-агентов он не спавнит. Он лист, намеренно, потому что фан-аут множит радиус поражения.",
+        "Он никогда не гоняет Docker, raw-socket или чужой ключ.",
+        "Шаг, которому нужен грант на сеть или shell, несет разовый человеческий гейт."
+      ],
       "safety_tail": "Гейт гонит тесты в отдельном процессе, недосягаемом для атакующего агента, поэтому инструмент не судит свой патч. Дыру, которой нужен реальный выход наружу, пишут как held и недоказуемую, а не наряжают в победу.",
-      "limits": "Одна кампания находит примерно половину того, что есть. Arez не путает заход с полным аудитом. Ему нужен macOS для песочницы живой цели сегодня; гейт и doctor работают везде. Живой охоте нужен агентский CLI, Claude или Codex; без него гейт и doctor все равно работают. strix только локальный референс-стенд, не зависимость.",
+      "limits": [
+        "Одна кампания находит примерно половину того, что есть. Arez не путает заход с полным аудитом.",
+        "Ему нужен macOS для песочницы живой цели сегодня; гейт и doctor работают везде.",
+        "Живой охоте нужен агентский CLI, Claude или Codex; без него гейт и doctor все равно работают.",
+        "strix только локальный референс-стенд, не зависимость."
+      ],
       "status": "Работает: полный атакующий конвейер, ядро анти-театра, doctor вендоренного ядра и сквозной приемочный сценарий проходят гейт. Впереди: живой seat-adapter при сборке роя Olympuz и переносимая песочница, чтобы живая цель поднималась не только на macOS.",
-      "welcome": "Привет. Я юрист, у меня две дочки и кофейное дело, а по вечерам я вайб-кожу свои инструменты. Мои агенты гоняют security-проходы по коду, и честные из них все время подводили. Сканер репортит дыру, я ему верю, а там пусто. Или зеленый тест сидит поверх дыры, которая никуда не делась.\n\nПоэтому Arez засчитывает находку только когда ее выполнили. Тест краснеет на дырявом коде и зеленеет после фикса, за этим следит отдельный процесс, а регрессия остается в гейте навсегда. Живую цель он бьет только на твоей машине, на 127.0.0.1, под своей песочницей. Нужна красная команда, которая доказывает, а не гадает, забирай и делай своей.",
+      "welcome": "Привет. Я не инженер, я юрист. Я вайб-кожу свои инструменты для своих задач.\n\nЯ понял, что безопасность очень важна, и поэтому сделал этот инструмент. Он проверяет мой код настоящей атакой, а не догадкой. Если сканер не может доказать, что дыра настоящая, я не хочу об этом слышать, и теперь мне не приходится: Arez сообщает только то, что сам сломал и починил.\n\nЕсли тебе это поможет так же, забирай и делай своим.",
       "quick_intro": "Нужен Mac или Linux, Node.js 22 или новее и git. Для живой охоты пригодится агент в терминале: `claude` или `codex`. Три двери отсюда, любая работает.",
       "quick_extra": "Нет Git? Скачай [ZIP](https://github.com/zarubinvibe/arez/archive/refs/heads/main.zip), распакуй и запусти внутри тот же `./install.sh`. Хочешь архив в терминале? Возьми [тарбол](https://github.com/zarubinvibe/arez/archive/refs/heads/main.tar.gz). Первый раз? Открой проект в Claude Code и запусти `/arez-setup`: установка пройдет разговором, по одному вопросу, и ничего не запустится без твоего да.",
       "quick_result": "установщик здоровается, смотрит, что у тебя уже есть, гонит свой гейт и честно называет, что на твоей системе не заработает.",
@@ -360,11 +382,22 @@
           "目标运行时所在的沙箱。只打 127.0.0.1，出不了你的机器，还有一只金丝雀证明这层隔离是真的。"
         ]
       ],
-      "safety": "Arez 是一个进攻性工具，被造成对自己的边界很老实。它只在 127.0.0.1、在自己的操作系统级沙箱里打活靶，零对外流量。它不派生子智能体：它故意是一片叶子，因为扇出会放大打击半径。它从不用 Docker、裸套接字或别人的密钥。需要网络或 shell 授权的步骤要过一次人工闸门。",
+      "safety": [
+        "Arez 是一个进攻性工具，被造成对自己的边界很老实。",
+        "它只在 127.0.0.1、在自己的操作系统级沙箱里打活靶，零对外流量。",
+        "它不派生子智能体。它故意是一片叶子，因为扇出会放大打击半径。",
+        "它从不用 Docker、裸套接字或别人的密钥。",
+        "需要网络或 shell 授权的步骤要过一次人工闸门。"
+      ],
       "safety_tail": "门禁在一个攻击方够不着的独立进程里跑测试，所以工具不给自己的补丁下结论。一个需要真正出机器流量才能证明的洞，会被记为 held、无法证明，而不是被打扮成一次胜利。",
-      "limits": "一场战役大约找到实际存在的一半。Arez 不把一次运行当成一次完整审计。活靶沙箱目前需要 macOS；门禁和 doctor 到处都能跑。实时狩猎需要一个智能体 CLI，Claude 或 Codex；没有它，门禁和 doctor 照样工作。strix 只是本地参照台，不是依赖。",
+      "limits": [
+        "一场战役大约找到实际存在的一半。Arez 不把一次运行当成一次完整审计。",
+        "活靶沙箱目前需要 macOS；门禁和 doctor 到处都能跑。",
+        "实时狩猎需要一个智能体 CLI，Claude 或 Codex；没有它，门禁和 doctor 照样工作。",
+        "strix 只是本地参照台，不是依赖。"
+      ],
       "status": "已经在跑：完整的攻击流水线、反表演内核、被 vendored 内核的 doctor，以及端到端的验收场景，全都通过门禁。接下来：当 Olympuz 蜂群组装时接上实时的 seat-adapter，以及一个可移植的沙箱，让活靶不只在 macOS 上起得来。",
-      "welcome": "你好。我是一名律师，有两个女儿，还做咖啡生意，晚上自己写工具。我的智能体会对代码跑安全检查，可越是老实的检查越常出岔子。扫描器报了一个洞，我信了，那里却什么都没有。或者一个绿色测试压在一个从没动过的洞上面。\n\n所以 Arez 只认被真正执行过的发现。测试在有漏洞的代码上变红，修好后变绿，由一个独立进程盯着，这条回归会永远留在门禁里。它只在你自己的机器上、在 127.0.0.1、在自己的沙箱里打活靶。如果你要的是一支用证明而不是猜测的红队，拿去，把它变成你自己的。",
+      "welcome": "你好。我不是工程师，我是律师。我为自己的任务用氛围编程（vibe-coding）做自己的工具。\n\n我明白安全非常重要，所以做了这个工具。它靠真正发起攻击来检查我的代码，而不是靠猜。如果扫描器不能证明一个洞是真的，我不想听到它，现在我也不用听了：Arez 只报告它自己打破又修好的东西。\n\n如果它也能这样帮到你，拿去，把它变成你自己的。",
       "quick_intro": "你需要 Mac 或 Linux、Node.js 22 或更新，以及 git。做实时狩猎还想在终端里有一个智能体：`claude` 或 `codex`。从这里有三道门，哪一道都行。",
       "quick_extra": "没有 Git？下载 [ZIP](https://github.com/zarubinvibe/arez/archive/refs/heads/main.zip) 解压，在里面跑同样的 `./install.sh`。想在终端里用压缩包？拿 [tarball](https://github.com/zarubinvibe/arez/archive/refs/heads/main.tar.gz)。第一次用？在 Claude Code 里打开项目并运行 `/arez-setup`：安装会以对话进行，一次一个问题，没有你的同意什么都不跑。",
       "quick_result": "安装脚本先打招呼，看看你已经有什么，跑它自己的门禁，并老实说清楚在你的系统上哪些跑不起来。",
